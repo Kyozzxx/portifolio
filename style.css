@@ -1,0 +1,217 @@
+/* Importando fontes */
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+/* Paleta de cores - Cimento Queimado */
+:root {
+  --cor-fundo: #2f2f2f;        /* fundo geral escuro */
+  --cor-card: #3b3b3b;         /* cor de fundo dos cards */
+  --cor-texto: #e0e0e0;        /* texto claro */
+  --cor-destaque: #b0b0b0;     /* cinza médio para detalhes */
+  --cor-borda: #4a4a4a;        /* bordas sutis */
+  --cor-hover: #8c8c8c;        /* hover mais claro */
+  --cor-botao: #6f6f6f;        /* botão principal */
+  --cor-botao-hover: #8f8f8f;  /* botão ao passar o mouse */
+  --cor-modal-bg: #404040;     /* fundo dos modais */
+}
+
+/* Corpo geral */
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Títulos */
+h1, h2, h3, h5 {
+  color: var(--cor-destaque);
+  font-weight: 700;
+  font-family: 'UnifrakturCook', serif;
+}
+
+/* Avatar */
+header img {
+  border: 3px solid var(--cor-destaque);
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Texto do cabeçalho */
+header p {
+  color: var(--cor-texto);
+}
+
+/* Cards */
+.card {
+  background-color: var(--cor-card);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+}
+
+.card-title {
+  font-family: 'UnifrakturCook', serif;
+  color: var(--cor-destaque);
+}
+
+.card-text {
+  font-family: 'Chakra Petch', sans-serif;
+  color: var(--cor-texto);
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--cor-botao);
+  border-color: var(--cor-botao);
+  color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-botao-hover);
+  border-color: var(--cor-botao-hover);
+}
+
+.btn-success {
+  background-color: #5c8a5b;
+  border-color: #5c8a5b;
+}
+
+.btn-success:hover {
+  background-color: #70a06f;
+  border-color: #70a06f;
+}
+
+/* Modais */
+.modal-content {
+  background-color: var(--cor-modal-bg);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+}
+
+.modal-body p {
+  line-height: 1.6;
+}
+
+.modal-body img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 1em;
+}
+
+/* Badges */
+.badge {
+  background-color: var(--cor-botao);
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.badge:hover {
+  background-color: var(--cor-hover);
+}
+
+/* Links no rodapé */
+footer {
+  border-top: 1px solid var(--cor-borda);
+  color: var(--cor-destaque);
+  background-color: #262626;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+footer a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  margin: 0 0.5em;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Container e imagens */
+.container {
+  max-width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Transições suaves */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Fundo geral em tom cimento queimado */
+body {
+    background-color: #3e3e3e;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4a4a4a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagem sem borda */
+header img {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* Habilidades */
+.badge {
+    background-color: #6c757d !important;
+    font-size: 1rem;
+}
+
+/* Cartões dos projetos */
+.card {
+    background-color: #575757;
+    border: none;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #5c8df6;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #4678e0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4a4a4a;
+    border-radius: 12px;
+}
+footer a {
+    color: #5c8df6;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
